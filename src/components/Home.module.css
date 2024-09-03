@@ -1,0 +1,108 @@
+.home-container {
+    text-align: center;
+    padding: 60px;
+    color: #fff;
+    background: linear-gradient(135deg, #6a1b9a, #8e24aa, #7e57c2);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.home-heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.home-tagline {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+}
+
+.home-button {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.resume-button {
+    background-color: #5e35b1;
+    color: #fff;
+    text-decoration: none; /* Ensures underline is removed */
+}
+
+.resume-button:hover {
+    background-color: #7e57c2;
+}
+
+.github-button {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Ensures underline is removed for GitHub button */
+}
+
+.github-button:hover {
+    background-color: #444;
+}
+
+.github-icon {
+    margin-right: 8px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.wavy-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent 50%, #ddd 50%, #ddd 50%, transparent 100%);
+    background-size: 20px 1px;
+    background-repeat: repeat-x;
+    margin: 20px 0; /* Space above and below the line */
+    width: 100%; /* Full width */
+}

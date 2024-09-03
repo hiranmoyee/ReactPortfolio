@@ -1,0 +1,52 @@
+/* About.module.css */
+
+.about-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    color: #333;
+}
+
+.about-container h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #5e35b1;
+}
+
+.about-intro {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-specialization {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills-category {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills-category h4 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #5e35b1;
+}
+
+.skills-category p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+}

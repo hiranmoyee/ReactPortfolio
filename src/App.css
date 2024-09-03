@@ -1,38 +1,176 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, hsl(111, 35%, 27%), #847b6a);
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App Container */
 .App {
   text-align: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #4d8771;
+  border-radius: 8px;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Header */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  border-bottom: 1px solid #34315a50;
+}
+
+.header-left {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  color: #221c1c;
+}
+
+/* Contact Me Button */
+.contact-button {
+  background-color: #463b5f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #7e57c2;
+}
+
+/* Cards Container */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* Card Styles */
+.card {
+  background-color: #d3b9e1;
+  color: #333;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #9ac2ea;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  /* text-transform: lowercase; */
+}
+
+.card p {
+  margin: 10px 0 0;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+/* Modal Styles */
+.Modal {
+  background: #fff;
+  color: #333;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  position: relative;
+}
+
+.Overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content button {
+  background-color: #5e35b1;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-content button:hover {
+  background-color: #7e57c2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Modal Content Styles */
+.modal-content {
+  font-size: 0.9rem; /* Smaller font size for the content */
+}
+
+.modal-content h2 {
+  font-size: 1.2rem; /* Adjust as needed */
+}
+
+.modal-content p {
+  font-size: 0.8rem; /* Adjust as needed */
+}
+
+.modal-content ul {
+  font-size: 0.8rem; /* Adjust as needed */
+}
+
+.modal-content li {
+  font-size: 0.7rem; /* Adjust as needed */
+}
+
+/* Contact Me Button */
+.contact-button {
+  background-color: #5e35b1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #7e57c2;
 }

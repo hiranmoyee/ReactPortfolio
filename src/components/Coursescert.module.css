@@ -1,0 +1,25 @@
+/* Add these styles to Courses_cert.module.css */
+.courses-cert-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    color: #333;
+}
+
+.courses-cert-container h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #5e35b1;
+}
+
+.courses-cert-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.courses-cert-list li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+}

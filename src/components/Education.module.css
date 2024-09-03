@@ -1,0 +1,33 @@
+/* Add these styles to Education.module.css */
+.education-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    color: #333;
+}
+
+.education-container h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #5e35b1;
+}
+
+.education-item {
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.education-item h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #5e35b1;
+}
+
+.education-item p {
+    margin: 0px 0;
+    font-size: 1rem;
+    color: #666;
+}
